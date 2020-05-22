@@ -2,7 +2,7 @@ from Crypto.Util import number
 import math
 from random import randint
 
-strength_length = 128
+strength_length = 2048
 # Get the two primes that make up the composite modulus
 # They should not be too close, otherwise N can be factored by fermat's method
 # i.e. using a^2 - b^2 = (a-b)(a+b)
@@ -25,7 +25,7 @@ print("The modulus", modulus, len(str(modulus)))
 # It's a little different from the Euler's totient function but, they are the same for primes
 # This is made much simpler considering that N is a product of two primes
 gcd_primes_effect = math.gcd(prime1-1, prime2-1)
-lcm_primes_effect = (prime1-1)*(prime2-1)/gcd_primes_effect
+lcm_primes_effect = (prime1-1)*(prime2-1) // gcd_primes_effect
 lcm_primes_effect = int(lcm_primes_effect)
 carmichael_result = lcm_primes_effect
 print("The totient function of the modulus", carmichael_result)
