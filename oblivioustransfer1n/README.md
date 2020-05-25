@@ -1,4 +1,4 @@
-## Oblivious transfer between two parties 1 out of n
+# Oblivious transfer between two parties 1 out of n(100)
 The server does not know the index the client chose and the client cannot know any message other than the one they asked for  
 ## Usage:
 Install the dependencies, for python3
@@ -15,4 +15,4 @@ On the second one run
 python3 client.py
 ```
 In that order!  
-After the programs have finished, you can verify the result with the server script's prompt
+The server's script prompts for the correct index to verify the results.
