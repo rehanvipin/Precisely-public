@@ -6,14 +6,14 @@ Install all dependencies
 ```
 pip install pycryptodome pyzqm
 ```
-Run server.py
+Start the server (the garbler)
 ```
 python3 server.py
 ```
 Give your input to the script -   
 Make your own logic gate or use the and gate  
 The server and clients are equal parties computing a function.  
-Run the client.py
+Start the client (the evaluator)
 ```
 python3 client.py
 ```
